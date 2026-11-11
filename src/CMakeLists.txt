@@ -7,8 +7,8 @@ pico_set_program_name(lab8 "test")
 pico_set_program_version(lab8 "0.1")
 # Modify the below lines to enable/disable output over UART/USB.
 # These are mutually exclusive, only set one.
-pico_enable_stdio_uart(lab8 1)
-pico_enable_stdio_usb(lab8 0)
+pico_enable_stdio_uart(lab8 0)
+pico_enable_stdio_usb(lab8 1)
 # Add the libraries to the build
 target_link_libraries(lab8 PRIVATE
   pico_stdlib
