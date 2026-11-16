@@ -1,3 +1,12 @@
+# Analysis on babbling CAN node
+
+Within different constraints and delays and starts of our two CAN nodes,
+this varies widely. The most consistent arrangement we configured was a
+ms delay of ~400 on the sleeping, lower priority node, and a busy loop
+counting to 1000 on the other node.
+The sleeping node consistently receives about 8 CAN messages and then hangs
+due to the backed up CAN bus.
+
 # Renode setup
 The Raspberry Pico needs configuration files for Renode to work properly.
 
